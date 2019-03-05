@@ -2,7 +2,7 @@
   <div class="about">
     <div class="wrapper">
       <div class="left">
-        <div class="name text italic">徐含景</div>
+        <div class="name text">徐含景</div>
         <div class="hr text">--------</div>
         <div class="text">平面设计师</div>
         <br />
@@ -26,7 +26,7 @@
 
         <div class="letter italic">Contact</div>
         <div class="hr text">--------</div>
-        <div class="letter">E-mail.xhj45@163.com</div>
+        <div class="letter">E-mail: xhj45@163.com</div>
         <br />
 
         <div class="letter italic">WeChat</div>
@@ -34,11 +34,6 @@
         <div class="code-wrap">
           <img :src="xcode" alt="" />
         </div>
-        <br />
-
-        <div class="letter italic">Instagram</div>
-        <div class="hr text">--------</div>
-        <div class="letter">hanjing.xu</div>
       </div>
       <div class="right">
         <div class="letter">Xu Hanjing</div>

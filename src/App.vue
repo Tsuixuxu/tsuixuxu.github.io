@@ -17,6 +17,6 @@ export default {
 
 <style lang="less">
 .main-content {
-  padding: 60px 40px;
+  padding: 130px 40px 20px 80px;
 }
 </style>

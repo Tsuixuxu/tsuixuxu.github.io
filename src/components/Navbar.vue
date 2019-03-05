@@ -1,9 +1,9 @@
 <template>
   <div class="blog-navbar">
-    <div class="logo">TSUI.</div>
+    <router-link class="link" to="/"><div class="logo blog-font-bold">TSUI.</div></router-link>
     <div class="link-item link-work" :class="{ active: route !== 'works' }">
       <div class="route-wrap">
-        <router-link class="link" @click.native="changeRoute()" to="/works"
+        <router-link class="link" :class="{ 'blog-font-bold' : route === 'works' }" @click.native="changeRoute()" to="/works"
           >WORKS</router-link
         >
       </div>
@@ -20,9 +20,7 @@
       </div>
     </div>
     <div class="link-item">
-      <router-link class="link" to="/about" @click="changeRoute()"
-        >ABOUT</router-link
-      >
+      <router-link class="link" :class="{ 'blog-font-bold' : route === 'about' }" to="/about" @click="changeRoute()">ABOUT</router-link>
     </div>
   </div>
 </template>
@@ -92,8 +90,8 @@ export default {
   position: fixed;
   width: 100%;
   height: 60px;
-  line-height: 60px;
-  padding: 0 40px;
+  line-height: 1;
+  padding: 40px 80px 30px;
   display: flex;
   align-items: baseline;
   background-color: rgba(256, 256, 256, 1);
@@ -137,6 +135,7 @@ export default {
     overflow: hidden;
     transition: width 1s;
     white-space: nowrap;
+    align-items: center;
     .child {
       display: inline-block;
       margin-left: 10px;

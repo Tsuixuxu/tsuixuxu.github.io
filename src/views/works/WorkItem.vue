@@ -5,7 +5,13 @@
       {{ work.title }}
     </div>
     <div class="tag-wrap">
-      <span class="tag" @click="selectTag(work.tag)">{{ work.tag }}</span>
+      <span class="tag" v-for="(i, index) in work.tag" @click="selectTag(i)" :key="i">
+        {{ i }}
+        <template v-if="index !== work.tag.length - 1">
+           ,
+        </template>
+      </span>
+      <!-- <span class="tag" @click="selectTag(work.tag)">{{ work.tag }}</span> -->
     </div>
   </div>
 </template>
@@ -30,28 +36,34 @@ export default {
 
 <style lang="less" scoped>
 .work-item {
-  width: 25%;
   padding: 0 10px;
   box-sizing: border-box;
+  width: 300px;
+  margin-bottom: 30px;
   .img {
     display: block;
     width: 100%;
-    height: 160px;
+    height: 194px;
     object-fit: cover;
   }
 
   .title {
-    margin-top: 6px;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 700;
   }
   .tag-wrap {
-    margin-top: 6px;
+    margin-top: 4px;
+    line-height: 1;
     .tag {
       font-size: 12px;
-      padding: 4px 8px;
-      border-radius: 3px;
-      background-color: #409eff;
-      color: #fff;
+      margin-right: 6px;
+      color: #000;
       cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }

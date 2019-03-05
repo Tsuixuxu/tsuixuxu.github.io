@@ -26,22 +26,32 @@ const works = [
   {
     title: "广东省疾控很高的教科书十访九空",
     src: pg1,
-    tag: "brand"
+    tag: ["brand"]
   },
   {
     title: "古交市发iljkasgjsfkl",
     src: pg2,
-    tag: "package"
+    tag: ["package", 'poster']
   },
   {
     title: "广东省疾控很高的教科书十访九空",
     src: pg3,
-    tag: "poster"
+    tag: ["poster"]
   },
   {
     title: "古交市发iljkasgjsfkl",
     src: pg4,
-    tag: "book"
+    tag: ["book"]
+  },
+  {
+    title: "ddd1",
+    src: pg4,
+    tag: ["book"]
+  },
+  {
+    title: "ddd2",
+    src: pg4,
+    tag: ["book"]
   }
 ];
 export default {

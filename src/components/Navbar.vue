@@ -99,7 +99,7 @@ export default {
   .logo {
     font-size: 30px;
     font-weight: 700;
-    margin-right: 58px;
+    margin-right: 40px;
   }
 
   .link-item {

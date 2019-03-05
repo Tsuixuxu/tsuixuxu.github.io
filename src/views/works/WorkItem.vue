@@ -8,7 +8,7 @@
       <span class="tag" v-for="(i, index) in work.tag" @click="selectTag(i)" :key="i">
         {{ i }}
         <template v-if="index !== work.tag.length - 1">
-           ,
+          ,
         </template>
       </span>
       <!-- <span class="tag" @click="selectTag(work.tag)">{{ work.tag }}</span> -->

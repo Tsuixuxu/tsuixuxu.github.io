@@ -1,8 +1,8 @@
 <template>
   <div class="works">
-    <div class="content-wrap"  v-if="works.length">
+    <div class="content-wrap" v-if="works.length">
       <work-item
-        v-for="item in works" 
+        v-for="item in works"
         :work="item"
         :key="item.src"
         @filter="chooseType"
@@ -52,19 +52,18 @@ export default {
   data() {
     return {
       works: [...works],
-      tag: ''
+      tag: ""
     };
   },
   watch: {
-    '$route': function (val) {
-      console.log(val)
-      this.tag = val.query.tag
-      this.chooseType(this.tag)
+    $route: function(val) {
+      this.tag = val.query.tag;
+      this.chooseType(this.tag);
     }
   },
   methods: {
     chooseType(tag) {
-      if (tag === "all") {
+      if (!tag) {
         this.$set(this.$data, "works", works);
         return;
       }
@@ -75,7 +74,9 @@ export default {
     }
   },
   mounted() {
-    this.route = this.$route.name
+    this.route = this.$route.name;
+    let tag = this.$route.query.tag;
+    this.chooseType(tag);
   }
 };
 </script>

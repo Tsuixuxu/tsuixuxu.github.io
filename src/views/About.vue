@@ -1,14 +1,105 @@
 <template>
   <div class="about">
-    <div>徐含景</div>
-    <div>— — —</div>
-    <div>平面设计师</div>
-    <pre>
-      1992年生，现居中国杭州
-      2015年毕业于杭州师范大学美术学院，视觉传达设计专业 奖项
-      ————
-      第二届亚洲平面设计双年展入选作品 第二届中国大学计算机设计大赛杭州赛区一等奖 第二届中国大学计算机设计大赛云南赛区二等奖 检察机关廉政公益海报大赛特等奖 第五届全国大学生广告艺术大赛动画组二等奖 第三届中国(国际)大学生艺术作品展优秀奖 第八届设计之都(中国深圳)公益广告大赛三等奖 中国杭州大学生旅游节“杭州元素”主题设计大赛一等奖 浙江省第二届广告设计竞赛二等奖
-    </pre>
+    <div class="left">
+      <div class="name text">徐含景</div>
+      <div class="hr text">— — —</div>
+      <div class="text">平面设计师</div>
+      <br />
+      <div class="text">1992年生，现居中国杭州</div>
+      <div class="text">2015年毕业于杭州师范大学美术学院，视觉传达设计专业</div>
+      <br />
+      <br />
+      <div class="text">奖项</div>
+      <div class="hr text">— — —</div>
+      <div class="text">第二届亚洲平面设计双年展入选作品</div>
+      <div class="text">第二届中国大学计算机设计大赛杭州赛区一等奖</div>
+      <div class="text">第二届中国大学计算机设计大赛云南赛区二等奖</div>
+      <div class="text">检察机关廉政公益海报大赛特等奖</div>
+      <div class="text">第五届全国大学生广告艺术大赛动画组二等奖</div>
+      <div class="text">第三届中国（国际）大学生艺术作品展优秀奖</div>
+      <div class="text">第八届设计之都（中国深圳）公益广告大赛三等奖</div>
+      <div class="text">中国杭州大学生旅游节“杭州元素”主题设计大赛一等奖</div>
+      <div class="text">浙江省第二届广告设计竞赛二等奖</div>
+      <br />
+      <br />
 
+      <div class="letter">Contact</div>
+      <div class="hr text">— — —</div>
+      <div class="letter">E-mail.xhj45@163.com</div>
+      <br />
+
+      <div class="letter">WeChat</div>
+      <div class="hr text">— — —</div>
+      <div>
+        <img src="" alt="" />
+      </div>
+      <br />
+
+      <div class="letter">Instagram</div>
+      <div class="hr text">— — —</div>
+      <div class="letter">hanjing.xu</div>
+    </div>
+    <div class="right">
+      <div class="letter">Xu Hanjing</div>
+      <div class="hr text">— — —</div>
+      <div class="letter">Graphic Designer</div>
+      <br />
+      <div class="letter">Born in 1992, now living in Hangzhou, China</div>
+      <div class="letter">
+        Graduated from Academy of Fine Arts, Hangzhou Normal University in 2015,
+      </div>
+      <div class="letter">majoring in Visual Communication Design</div>
+      <br />
+
+      <div class="letter">Award</div>
+      <div class="hr text">— — —</div>
+      <div class="letter">
+        Selected Works of the Second Asian Biennial Graphic Design Exhibition
+      </div>
+      <div class="letter">
+        The 2nd China University Computer Design Competition Hangzhou First
+        Prize
+      </div>
+      <div class="letter">
+        Second Prize of Yunnan Competition Area in the 2nd China University
+        Computer Design Competition
+      </div>
+      <div class="letter">
+        Public Welfare Poster Competition for Integrity of Procuratorial Organs
+      </div>
+      <div class="letter">
+        Second Prize of Animation Group in the Fifth National College Students
+        Advertising Art Competition
+      </div>
+      <div class="letter">
+        Excellent Award of the Third China (International) University Student
+        Art Exhibition
+      </div>
+      <div class="letter">
+        Third Prize of the 8th Design Capital (Shenzhen, China) Public Service
+        Advertising Competition
+      </div>
+      <div class="letter">
+        First Prize of “Hangzhou Elements” Theme Design Competition in Hangzhou
+        University Tourism Festival, China
+      </div>
+      <div class="letter">
+        Second Prize of Zhejiang Second Advertising Design Competition
+      </div>
+    </div>
   </div>
 </template>
+<style lang="less" scoped>
+.about {
+  padding-top: 60px;
+  display: flex;
+  .left {
+    width: 560px;
+  }
+
+  .text,
+  .letter {
+    line-height: 2;
+  }
+}
+</style>

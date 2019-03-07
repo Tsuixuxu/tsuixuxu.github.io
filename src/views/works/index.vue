@@ -1,7 +1,7 @@
 <template>
   <div class="works">
-    <div class="content-wrap" v-if="works.length">
-      <work-item v-for="item in works" :work="item" :key="item.src"></work-item>
+    <div class="content-wrap" v-if="articles.length">
+      <work-item v-for="item in articles" :work="item" :key="item.id"></work-item>
     </div>
     <div class="no-data" v-else>
       暂无数据
@@ -12,43 +12,8 @@
 <script>
 // @ is an alias to /src
 import WorkItem from "./WorkItem.vue";
-import pg1 from "./imgs/1.jpg";
-import pg2 from "./imgs/2.jpg";
-import pg3 from "./imgs/3.jpg";
-import pg4 from "./imgs/4.jpg";
+import articles from '@/assets/detail.js'
 
-const works = [
-  {
-    title: "广东省疾控很高的教科书十访九空",
-    src: pg1,
-    tag: ["brand"]
-  },
-  {
-    title: "古交市发iljkasgjsfkl",
-    src: pg2,
-    tag: ["package", "poster"]
-  },
-  {
-    title: "广东省疾控很高的教科书十访九空",
-    src: pg3,
-    tag: ["poster"]
-  },
-  {
-    title: "古交市发iljkasgjsfkl",
-    src: pg4,
-    tag: ["book"]
-  },
-  {
-    title: "ddd1",
-    src: pg4,
-    tag: ["book"]
-  },
-  {
-    title: "ddd2",
-    src: pg4,
-    tag: ["book"]
-  }
-];
 export default {
   name: "works",
   components: {
@@ -56,7 +21,7 @@ export default {
   },
   data() {
     return {
-      works: [...works],
+      articles: [...articles],
       tag: ""
     };
   },
@@ -69,13 +34,13 @@ export default {
   methods: {
     chooseType(tag) {
       if (!tag) {
-        this.$set(this.$data, "works", works);
+        this.$set(this.$data, "articles", articles);
         return;
       }
-      const arr = works.filter(item => {
+      const arr = articles.filter(item => {
         return item.tag.includes(tag);
       });
-      this.$set(this.$data, "works", arr);
+      this.$set(this.$data, "articles", arr);
     }
   },
   mounted() {

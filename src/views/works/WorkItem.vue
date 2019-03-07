@@ -1,8 +1,8 @@
 <template>
   <div class="work-item">
-    <div class="content-wrapper">
+    <div class="content-wrapper" @click="goDetail">
       <div class="img-wrapper">
-        <img class="img" :src="work.src" alt="" />
+        <img class="img" :src="work.imgs[0] || ''" alt="" />
       </div>
       <div class="title">
         {{ work.title }}
@@ -38,6 +38,9 @@ export default {
   methods: {
     selectTag(tag) {
       this.$router.push({ name: "works", query: { tag: tag } });
+    },
+    goDetail() {
+      this.$router.push({ name: "article", query: { id: this.work.id } });
     }
   }
 };

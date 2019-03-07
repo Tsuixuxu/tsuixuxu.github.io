@@ -1,9 +1,15 @@
 <template>
   <div class="blog-navbar">
-    <router-link class="link" to="/"><div class="logo blog-font-bold">TSUI.</div></router-link>
+    <router-link class="link" to="/"
+      ><div class="logo blog-font-bold">TSUI.</div></router-link
+    >
     <div class="link-item link-work" :class="{ active: route !== 'works' }">
       <div class="route-wrap">
-        <router-link class="link" :class="{ 'blog-font-bold' : route === 'works' }" @click.native="changeRoute()" to="/works"
+        <router-link
+          class="link"
+          :class="{ 'blog-font-bold': route === 'works' }"
+          @click.native="changeRoute()"
+          to="/works"
           >WORKS</router-link
         >
       </div>
@@ -20,7 +26,13 @@
       </div>
     </div>
     <div class="link-item">
-      <router-link class="link" :class="{ 'blog-font-bold' : route === 'about' }" to="/about" @click="changeRoute()">ABOUT</router-link>
+      <router-link
+        class="link"
+        :class="{ 'blog-font-bold': route === 'about' }"
+        to="/about"
+        @click="changeRoute()"
+        >ABOUT</router-link
+      >
     </div>
   </div>
 </template>
@@ -122,8 +134,7 @@ export default {
 
   .link-work {
     display: flex;
-    // .route-wrap {
-    //   }
+    align-items: baseline;
     transition: all 1s;
     &.active {
       margin-right: 40px;
@@ -136,6 +147,7 @@ export default {
     transition: width 1s;
     white-space: nowrap;
     align-items: center;
+    line-height: 1.5;
     .child {
       display: inline-block;
       margin-left: 10px;

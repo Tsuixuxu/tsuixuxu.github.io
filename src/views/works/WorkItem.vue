@@ -1,11 +1,20 @@
 <template>
   <div class="work-item">
-    <img class="img" :src="work.src" alt="" />
-    <div class="title">
-      {{ work.title }}
+    <div class="content-wrapper">
+      <div class="img-wrapper">
+        <img class="img" :src="work.src" alt="" />
+      </div>
+      <div class="title">
+        {{ work.title }}
+      </div>
     </div>
     <div class="tag-wrap">
-      <span class="tag" v-for="(i, index) in work.tag" @click="selectTag(i)" :key="i">
+      <span
+        class="tag"
+        v-for="(i, index) in work.tag"
+        @click="selectTag(i)"
+        :key="i"
+      >
         {{ i }}
         <template v-if="index !== work.tag.length - 1">
           ,
@@ -28,7 +37,7 @@ export default {
   },
   methods: {
     selectTag(tag) {
-      this.$emit("filter", tag);
+      this.$router.push({ name: "works", query: { tag: tag } });
     }
   }
 };
@@ -36,15 +45,20 @@ export default {
 
 <style lang="less" scoped>
 .work-item {
-  padding: 0 10px;
   box-sizing: border-box;
   width: 300px;
   margin-bottom: 30px;
-  .img {
-    display: block;
-    width: 100%;
-    height: 194px;
-    object-fit: cover;
+  margin-right: 10px;
+
+  .img-wrapper {
+    padding: 5px;
+    border: 1px solid transparent;
+    .img {
+      display: block;
+      width: 290px;
+      height: 139px;
+      object-fit: cover;
+    }
   }
 
   .title {
@@ -64,6 +78,15 @@ export default {
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  .content-wrapper:hover {
+    .img-wrapper {
+      border: 1px solid #ccc;
+    }
+    .title {
+      text-decoration: underline;
     }
   }
 }

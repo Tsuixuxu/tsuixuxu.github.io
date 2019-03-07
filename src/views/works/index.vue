@@ -1,12 +1,7 @@
 <template>
   <div class="works">
     <div class="content-wrap" v-if="works.length">
-      <work-item
-        v-for="item in works"
-        :work="item"
-        :key="item.src"
-        @filter="chooseType"
-      ></work-item>
+      <work-item v-for="item in works" :work="item" :key="item.src"></work-item>
     </div>
     <div class="no-data" v-else>
       暂无数据
@@ -31,7 +26,7 @@ const works = [
   {
     title: "古交市发iljkasgjsfkl",
     src: pg2,
-    tag: ["package", 'poster']
+    tag: ["package", "poster"]
   },
   {
     title: "广东省疾控很高的教科书十访九空",

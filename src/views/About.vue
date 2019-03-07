@@ -7,7 +7,9 @@
         <div class="text">平面设计师</div>
         <br />
         <div class="text">1992年生，现居中国杭州</div>
-        <div class="text">2015年毕业于杭州师范大学美术学院，视觉传达设计专业</div>
+        <div class="text">
+          2015年毕业于杭州师范大学美术学院，视觉传达设计专业
+        </div>
         <br />
         <br />
         <div class="text italic">奖项</div>
@@ -42,7 +44,8 @@
         <br />
         <div class="letter">Born in 1992, now living in Hangzhou, China</div>
         <div class="letter">
-          Graduated from Academy of Fine Arts, Hangzhou Normal University in 2015,
+          Graduated from Academy of Fine Arts, Hangzhou Normal University in
+          2015,
         </div>
         <div class="letter">majoring in Visual Communication Design</div>
         <br />
@@ -61,7 +64,8 @@
           Computer Design Competition
         </div>
         <div class="letter">
-          Public Welfare Poster Competition for Integrity of Procuratorial Organs
+          Public Welfare Poster Competition for Integrity of Procuratorial
+          Organs
         </div>
         <div class="letter">
           Second Prize of Animation Group in the Fifth National College Students
@@ -76,8 +80,8 @@
           Advertising Competition
         </div>
         <div class="letter">
-          First Prize of “Hangzhou Elements” Theme Design Competition in Hangzhou
-          University Tourism Festival, China
+          First Prize of “Hangzhou Elements” Theme Design Competition in
+          Hangzhou University Tourism Festival, China
         </div>
         <div class="letter">
           Second Prize of Zhejiang Second Advertising Design Competition
@@ -88,14 +92,14 @@
   </div>
 </template>
 <script>
-import xcode from '@/source/xcode.svg'
+import xcode from "@/source/xcode.svg";
 export default {
-  data () {
+  data() {
     return {
       xcode: xcode
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="less" scoped>
@@ -107,7 +111,7 @@ export default {
 
     .code-wrap {
       width: 60px;
-      
+
       img {
         width: 100%;
       }

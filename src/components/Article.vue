@@ -5,11 +5,18 @@
       <div class="designer">{{ article.designer }}</div>
       <div class="date">{{ article.date }}</div>
       <div class="client">{{ article.client }}</div>
+      <div class="quick-wrapper">
+        <i class="iconfont pre" @click="goPre" v-if="article.id > 1">
+          &#xe618;
+        </i>
+        <i v-if="count > article.id" class="iconfont next" @click="goNext"
+          >&#xe6ed;</i
+        >
+      </div>
     </div>
     <div class="img" v-for="(img, index) in article.imgs" :key="index">
-      <img :src="img" alt="">
+      <img :src="img" alt="" />
     </div>
-    
   </div>
 </template>
 <script>
@@ -18,15 +25,63 @@ export default {
     article: {
       default: () => {},
       type: Object
+    },
+    count: {
+      default: 0,
+      type: Number
     }
   },
   watch: {
     article: {
       handler(val) {
-        console.log(val)
+        // console.log(val);
       },
       deep: true
     }
+  },
+  methods: {
+    goPre() {
+      this.$router.push({
+        name: "article",
+        query: { id: this.article.id - 1 }
+      });
+    },
+    goNext() {
+      this.$router.push({
+        name: "article",
+        query: { id: this.article.id + 1 }
+      });
+    }
+  }
+};
+</script>
+<style lang="less" scoped>
+.detail {
+  position: relative;
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .designer,
+  .date,
+  .client {
+    line-height: 1.5;
+  }
+  .quick-wrapper {
+    position: absolute;
+    right: 50%;
+    top: 10px;
+    .pre {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .next {
+      cursor: pointer;
+    }
   }
 }
-</script>
+.img {
+  margin-top: 20px;
+}
+</style>

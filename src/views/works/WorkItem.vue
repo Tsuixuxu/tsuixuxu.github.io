@@ -56,6 +56,7 @@ export default {
   .img-wrapper {
     padding: 5px;
     border: 1px solid transparent;
+    cursor: pointer;
     .img {
       display: block;
       width: 290px;

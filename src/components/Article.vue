@@ -1,10 +1,22 @@
 <template>
   <div class="article-wrapper">
     <div class="detail">
-      <div class="title">{{ article.title }}</div>
-      <div class="designer">{{ article.designer }}</div>
-      <div class="date">{{ article.date }}</div>
-      <div class="client">{{ article.client }}</div>
+      <div class="title">
+        {{ article.title }}
+      </div>
+      <div class="designer">
+        {{ article.designer }}
+      </div>
+      <div class="date" v-if="article && article.date">
+        {{ article.date }}
+      </div>
+      <div class="client" v-if="article && (article.client && !article.isNode)">
+        {{ article.client }}
+      </div>
+      <component
+        v-if="article && (article.client && article.isNode)"
+        :is="article.client"
+      />
       <div class="quick-wrapper">
         <i class="iconfont pre" @click="goPre" v-if="article.id > 1">
           &#xe618;
@@ -33,13 +45,18 @@ export default {
   },
   watch: {
     article: {
-      handler(val) {
-        // console.log(val);
+      handler() {
+        this.toTop();
       },
       deep: true
     }
   },
   methods: {
+    toTop() {
+      setTimeout(() => {
+        scrollTo(0, 0);
+      }, 100);
+    },
     goPre() {
       this.$router.push({
         name: "article",
@@ -52,6 +69,9 @@ export default {
         query: { id: this.article.id + 1 }
       });
     }
+  },
+  mounted() {
+    this.toTop();
   }
 };
 </script>
@@ -70,7 +90,7 @@ export default {
   }
   .quick-wrapper {
     position: absolute;
-    right: 50%;
+    right: 20px;
     top: 10px;
     .pre {
       margin-right: 10px;
@@ -83,5 +103,9 @@ export default {
 }
 .img {
   margin-top: 20px;
+
+  img {
+    width: 100%;
+  }
 }
 </style>

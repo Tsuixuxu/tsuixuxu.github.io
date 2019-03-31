@@ -39,8 +39,8 @@
 <script>
 const types = [
   {
-    name: "品牌",
-    tag: "brand"
+    name: "项目",
+    tag: "project"
   },
   {
     name: "海报",
@@ -107,6 +107,7 @@ export default {
   display: flex;
   align-items: baseline;
   background-color: rgba(256, 256, 256, 1);
+  z-index: 10;
 
   .logo {
     font-size: 30px;

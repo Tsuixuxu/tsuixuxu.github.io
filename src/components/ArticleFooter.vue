@@ -1,7 +1,7 @@
 <template>
   <div class="article-footer">
     <div class="work-children">
-      <div class="back">返回</div>
+      <div class="back" @click="back">返回</div>
       <div
         v-for="child in types"
         class="child"
@@ -53,9 +53,12 @@ export default {
   methods: {
     selectChid(val) {
       this.$router.push({ name: "works", query: { tag: val } });
+    },
+    back() {
+      this.$router.push({ name: "works" });
     }
   }
-}
+};
 </script>
 <style lang="less" scoped>
 .work-children {

@@ -2,7 +2,7 @@
   <div class="work-item">
     <div class="content-wrapper" @click="goDetail">
       <div class="img-wrapper">
-        <img class="img" :src="work.banner || work.imgs[0] || ''" alt="" />
+        <img class="img" v-lazy="work.banner || work.imgs[0] || ''" alt="" />
       </div>
       <div class="title">
         {{ work.title }}

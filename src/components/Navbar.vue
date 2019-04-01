@@ -39,11 +39,11 @@
 <script>
 const types = [
   {
-    name: "项目",
+    name: "project",
     tag: "project"
   },
   {
-    name: "海报",
+    name: "poster",
     tag: "poster"
   },
   {
@@ -51,20 +51,12 @@ const types = [
     tag: "package"
   },
   {
-    name: "书籍",
-    tag: "book"
-  },
-  {
     name: "logo",
     tag: "logo"
   },
   {
-    name: "C4D",
-    tag: "c4d"
-  },
-  {
     name: "UI",
-    tag: "ui"
+    tag: "UI"
   }
 ];
 export default {

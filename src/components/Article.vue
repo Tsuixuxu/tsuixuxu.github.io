@@ -27,8 +27,9 @@
       </div>
     </div>
     <div class="img" v-for="(img, index) in article.imgs" :key="index">
-      <img :src="img" alt="" />
+      <img v-lazy="img" alt="" />
     </div>
+    <div class="copyright">Copyright © Tsui. All rights reserved.</div>
   </div>
 </template>
 <script>
@@ -103,9 +104,15 @@ export default {
 }
 .img {
   margin-top: 20px;
+  max-width: 720px;
 
   img {
     width: 100%;
   }
+}
+.copyright {
+  margin: 100px 0 40px;
+  font-size: 12px;
+  color: rgb(167, 167, 167);
 }
 </style>

@@ -467,7 +467,7 @@ const ui_arr = [
     date: "YEAR 2018",
     banner: ui1_banner,
     imgs: [ui1_1],
-    tag: ["project"]
+    tag: ["UI"]
   },
   {
     id: 32,
@@ -475,7 +475,7 @@ const ui_arr = [
     designer: "Tsui.",
     date: "YEAR 2018",
     imgs: [ui2_1, ui2_2, ui2_3, ui2_4, ui2_5, ui2_6, ui2_7, ui2_8],
-    tag: ["project"]
+    tag: ["UI"]
   }
 ];
 

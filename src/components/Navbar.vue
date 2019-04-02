@@ -47,7 +47,7 @@ const types = [
     tag: "poster"
   },
   {
-    name: "包装",
+    name: "package",
     tag: "package"
   },
   {

@@ -2,7 +2,7 @@
   <div class="work-item">
     <div class="content-wrapper" @click="goDetail">
       <div class="img-wrapper">
-        <img class="img" :src="work.banner || work.imgs[0] || ''" alt="" />
+        <img class="img" v-lazy="work.banner || work.imgs[0] || ''" alt="" />
       </div>
       <div class="title">
         {{ work.title }}
@@ -33,7 +33,9 @@ export default {
     }
   },
   data() {
-    return {};
+    return {
+      timer: ""
+    };
   },
   methods: {
     selectTag(tag) {
@@ -41,7 +43,46 @@ export default {
     },
     goDetail() {
       this.$router.push({ name: "article", query: { id: this.work.id } });
+    },
+    async createWarning(e) {
+      let c = await document.querySelector(".protect-text");
+      c && document.body.removeChild(c);
+      let x = e.x;
+      let y = e.y;
+      let dom = document.createElement("div");
+      dom.innerText = "版权保护，请勿保存下载";
+      dom.classList = "protect-text";
+      dom.style.left = x + "px";
+      dom.style.top = y + "px";
+      document.body.append(dom);
+      this.clearTimer();
+    },
+    clearTimer() {
+      if (this.timer) {
+        clearTimeout(this.timer);
+      }
+      this.timer = setTimeout(() => {
+        let c = document.querySelector(".protect-text");
+        c && document.body.removeChild(c);
+      }, 2000);
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      let doms = document.querySelectorAll(".img");
+      doms.forEach(i => {
+        i.oncontextmenu = e => {
+          // console.log("object");
+          e.preventDefault();
+          this.createWarning(e);
+          return false;
+        };
+      });
+      document.body.onclick = () => {
+        let c = document.querySelector(".protect-text");
+        c && document.body.removeChild(c);
+      };
+    });
   }
 };
 </script>
@@ -49,7 +90,7 @@ export default {
 <style lang="less" scoped>
 .work-item {
   box-sizing: border-box;
-  width: 300px;
+  width: 330px;
   margin-bottom: 30px;
   margin-right: 10px;
 
@@ -59,8 +100,8 @@ export default {
     cursor: pointer;
     .img {
       display: block;
-      width: 290px;
-      height: 139px;
+      width: 320px;
+      height: 240px;
       object-fit: cover;
     }
   }
@@ -93,5 +134,17 @@ export default {
       text-decoration: underline;
     }
   }
+}
+</style>
+
+<style lang="less">
+.protect-text {
+  position: fixed;
+  z-index: 100;
+  background-color: #000;
+  padding: 6px 10px;
+  color: #ffffff;
+  border-radius: 3px;
+  line-height: 1.5;
 }
 </style>

@@ -1,18 +1,23 @@
 <template>
   <div class="works">
     <div class="content-wrap" v-if="articles.length">
-      <work-item v-for="item in articles" :work="item" :key="item.id"></work-item>
+      <work-item
+        v-for="item in articles"
+        :work="item"
+        :key="item.id"
+      ></work-item>
     </div>
     <div class="no-data" v-else>
       暂无数据
     </div>
+    <div class="copyright">Copyright © Tsui. All rights reserved.</div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import WorkItem from "./WorkItem.vue";
-import articles from '@/assets/detail.js'
+import articles from "@/assets/detail.js";
 
 export default {
   name: "works",
@@ -75,5 +80,10 @@ export default {
     text-align: center;
     margin-top: 40px;
   }
+}
+.copyright {
+  margin: 100px 0 40px;
+  font-size: 12px;
+  color: rgb(167, 167, 167);
 }
 </style>

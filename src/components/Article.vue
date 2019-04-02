@@ -27,9 +27,8 @@
       </div>
     </div>
     <div class="img" v-for="(img, index) in article.imgs" :key="index">
-      <img v-lazy="img" alt="" />
+      <img class="protectImg" v-lazy="img" alt="" />
     </div>
-    <div class="copyright">Copyright © Tsui. All rights reserved.</div>
   </div>
 </template>
 <script>
@@ -44,10 +43,18 @@ export default {
       type: Number
     }
   },
+  data() {
+    return {
+      timer: ""
+    };
+  },
   watch: {
     article: {
       handler() {
         this.toTop();
+        this.$nextTick(() => {
+          this.preventHandler();
+        });
       },
       deep: true
     }
@@ -69,10 +76,45 @@ export default {
         name: "article",
         query: { id: this.article.id + 1 }
       });
+    },
+    async createWarning(e) {
+      let c = await document.querySelector(".protect-text");
+      c && document.body.removeChild(c);
+      let x = e.x;
+      let y = e.y;
+      let dom = document.createElement("div");
+      dom.innerText = "版权保护，请勿保存下载";
+      dom.classList = "protect-text";
+      dom.style.left = x + "px";
+      dom.style.top = y + "px";
+      document.body.append(dom);
+      this.clearTimer();
+    },
+    clearTimer() {
+      if (this.timer) {
+        clearTimeout(this.timer);
+      }
+      this.timer = setTimeout(() => {
+        let c = document.querySelector(".protect-text");
+        c && document.body.removeChild(c);
+      }, 2000);
+    },
+    preventHandler() {
+      let doms = document.querySelectorAll(".protectImg");
+      doms.forEach(i => {
+        i.oncontextmenu = e => {
+          e.preventDefault();
+          this.createWarning(e);
+          return false;
+        };
+      });
     }
   },
   mounted() {
     this.toTop();
+    this.$nextTick(() => {
+      this.preventHandler();
+    });
   }
 };
 </script>
@@ -109,10 +151,5 @@ export default {
   img {
     width: 100%;
   }
-}
-.copyright {
-  margin: 100px 0 40px;
-  font-size: 12px;
-  color: rgb(167, 167, 167);
 }
 </style>

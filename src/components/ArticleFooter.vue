@@ -16,32 +16,24 @@
 <script>
 const types = [
   {
-    name: "品牌",
-    tag: "brand"
+    name: "project",
+    tag: "project"
   },
   {
-    name: "海报",
+    name: "poster",
     tag: "poster"
   },
   {
-    name: "包装",
+    name: "package",
     tag: "package"
-  },
-  {
-    name: "书籍",
-    tag: "book"
   },
   {
     name: "logo",
     tag: "logo"
   },
   {
-    name: "C4D",
-    tag: "c4d"
-  },
-  {
     name: "UI",
-    tag: "ui"
+    tag: "UI"
   }
 ];
 export default {

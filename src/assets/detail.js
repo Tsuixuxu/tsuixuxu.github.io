@@ -1,4 +1,5 @@
 // const publicPath = process.env.BASE_URL
+import package2_client from "./works/package/MidAutumn.vue";
 const logo1_1 = "imgs/logo/logo1_1.jpg";
 const logo1_2 = "imgs/logo/logo1_2.jpg";
 const logo2 = "imgs/logo/logo2.jpg";
@@ -17,7 +18,6 @@ const package2_7 = "imgs/package/mid-autumn/7.png";
 const package2_8 = "imgs/package/mid-autumn/8.jpg";
 const package2_9 = "imgs/package/mid-autumn/9.jpg";
 const package2_banner = "imgs/package/mid-autumn/banner.png";
-const package2_client = "imgs/package/mid-autumn/client.vue";
 
 const package3_1 = "imgs/package/new-year/1.jpeg";
 const package3_2 = "imgs/package/new-year/2.jpg";
@@ -64,9 +64,12 @@ const poster14_1 = "imgs/poster/pinpai.png";
 
 const poster15_1 = "imgs/poster/faxianshanghai.jpg";
 
-const poster16_1 = "imgs/project/315/1.png";
-const poster16_2 = "imgs/project/315/2.png";
-const poster16_3 = "imgs/project/315/3.png";
+const poster16_1 = "imgs/poster/315/1.png";
+const poster16_2 = "imgs/poster/315/2.png";
+const poster16_3 = "imgs/poster/315/3.png";
+
+const poster17_1 = "imgs/poster/7th.png";
+const poster18_1 = "imgs/poster/bainian.png";
 
 const project1_1 = "imgs/project/fenyuexigong/1.png";
 const project1_2 = "imgs/project/fenyuexigong/2.png";
@@ -355,6 +358,22 @@ const poster_arr = [
     designer: "Tsui.",
     date: "YEAR 2018",
     imgs: [poster16_1, poster16_2, poster16_3],
+    tag: ["poster"]
+  },
+  {
+    id: 35,
+    title: "企朋七周年",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [poster17_1],
+    tag: ["poster"]
+  },
+  {
+    id: 36,
+    title: "福猪图",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [poster18_1],
     tag: ["poster"]
   }
 ];

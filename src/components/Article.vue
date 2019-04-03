@@ -10,9 +10,11 @@
       <div class="date" v-if="article && article.date">
         {{ article.date }}
       </div>
-      <div class="client" v-if="article && (article.client && !article.isNode)">
-        {{ article.client }}
-      </div>
+      <pre
+        class="client"
+        v-if="article && (article.client && !article.isNode)"
+        >{{ article.client }}</pre
+      >
       <component
         v-if="article && (article.client && article.isNode)"
         :is="article.client"
@@ -26,7 +28,7 @@
         >
       </div>
     </div>
-    <div class="img" v-for="(img, index) in article.imgs" :key="index">
+    <div class="img" v-for="(img, index) in imgs" :key="index">
       <img class="protectImg" v-lazy="img" alt="" />
     </div>
   </div>
@@ -45,15 +47,20 @@ export default {
   },
   data() {
     return {
-      timer: ""
+      timer: "",
+      imgs: this.article.imgs || []
     };
   },
   watch: {
     article: {
       handler() {
+        this.imgs = [];
         this.toTop();
         this.$nextTick(() => {
-          this.preventHandler();
+          this.imgs = this.article.imgs;
+          setTimeout(() => {
+            this.preventHandler();
+          }, 100);
         });
       },
       deep: true
@@ -133,7 +140,7 @@ export default {
   }
   .quick-wrapper {
     position: absolute;
-    right: 20px;
+    left: 910px;
     top: 10px;
     .pre {
       margin-right: 10px;
@@ -146,7 +153,7 @@ export default {
 }
 .img {
   margin-top: 20px;
-  max-width: 720px;
+  max-width: 960px;
 
   img {
     width: 100%;

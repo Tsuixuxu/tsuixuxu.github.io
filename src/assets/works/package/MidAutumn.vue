@@ -26,7 +26,7 @@
     <p class="bottom2">此致：但愿人长久，千里共婵娟。</p>
   </div>
 </template>
-<style scope>
+<style scoped>
 .article-client {
   font-size: 12px;
 }

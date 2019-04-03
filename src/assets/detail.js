@@ -1,8 +1,15 @@
 // const publicPath = process.env.BASE_URL
 import package2_client from "./works/package/MidAutumn.vue";
-const logo1_1 = "imgs/logo/logo1_1.jpg";
-const logo1_2 = "imgs/logo/logo1_2.jpg";
-const logo2 = "imgs/logo/logo2.jpg";
+import project1_client from "./works/project/Fenyuexigong.vue";
+import project2_client from "./works/project/Guoweixianjing.vue";
+import project9_client from "./works/project/123456789.vue";
+
+const logo1_1 = "imgs/logo/logo1/logo1_1.jpg";
+const logo1_2 = "imgs/logo/logo1/logo1_2.jpg";
+const logo1_banner = "imgs/logo/logo1/banner.png";
+
+const logo2 = "imgs/logo/logo2/logo2.jpg";
+const logo2_banner = "imgs/logo/logo2/banner.png";
 
 const package1_1 = "imgs/package/calendar2018/1.jpg";
 const package1_2 = "imgs/package/calendar2018/2.png";
@@ -29,29 +36,40 @@ const package3_7 = "imgs/package/new-year/7.png";
 const package3_banner = "imgs/package/new-year/banner.png";
 
 const poster1 = "imgs/poster/1024.png";
-const poster2 = "imgs/poster/1212.png";
+
+const poster2 = "imgs/poster/1212/1212.png";
+const poster2_banner = "imgs/poster/1212/banner.png";
+
 const poster3 = "imgs/poster/dianxin.jpg";
-const poster4 = "imgs/poster/duanwu.jpg";
-const poster5 = "imgs/poster/huojin.jpg";
-const poster6 = "imgs/poster/winter.png";
+const poster4 = "imgs/poster/duanwu/duanwu.jpg";
+const poster4_banner = "imgs/poster/duanwu/banner.png";
+const poster5_1 = "imgs/poster/huojin/huojin.jpg";
+const poster5_banner = "imgs/poster/huojin/banner.png";
+
+const poster6 = "imgs/poster/winter/winter.png";
+const poster6_banner = "imgs/poster/winter/banner.png";
 
 const poster7_1 = "imgs/poster/51/1.png";
 const poster7_2 = "imgs/poster/51/2.jpg";
 const poster7_3 = "imgs/poster/51/3.jpg";
+const poster7_banner = "imgs/poster/51/banner.png";
 
 const poster8_1 = "imgs/poster/0101/1.png";
 const poster8_2 = "imgs/poster/0101/2.png";
 const poster8_3 = "imgs/poster/0101/3.png";
+const poster8_banner = "imgs/poster/0101/banner.png";
 
 const poster9_1 = "imgs/poster/1111/1.png";
 const poster9_2 = "imgs/poster/1111/2.png";
 const poster9_3 = "imgs/poster/1111/3.png";
+const poster9_banner = "imgs/poster/1111/banner.png";
 
 const poster10_1 = "imgs/poster/new-year/1.jpg";
 const poster10_banner = "imgs/poster/new-year/banner.png";
 
 const poster11_1 = "imgs/poster/pages/1.jpg";
 const poster11_2 = "imgs/poster/pages/2.png";
+const poster11_banner = "imgs/poster/pages/banner.png";
 
 const poster12_1 = "imgs/poster/school/1.jpg";
 const poster12_2 = "imgs/poster/school/2.jpg";
@@ -59,17 +77,23 @@ const poster12_2 = "imgs/poster/school/2.jpg";
 const poster13_1 = "imgs/poster/terminal/1.png";
 const poster13_2 = "imgs/poster/terminal/2.png";
 const poster13_3 = "imgs/poster/terminal/3.png";
+const poster13_banner = "imgs/poster/terminal/banner.png";
 
 const poster14_1 = "imgs/poster/pinpai.png";
 
-const poster15_1 = "imgs/poster/faxianshanghai.jpg";
+const poster15_1 = "imgs/poster/faxianshanghai/faxianshanghai.jpg";
+const poster15_banner = "imgs/poster/faxianshanghai/banner.png";
 
 const poster16_1 = "imgs/poster/315/1.png";
 const poster16_2 = "imgs/poster/315/2.png";
 const poster16_3 = "imgs/poster/315/3.png";
+const poster16_banner = "imgs/poster/315/banner.png";
 
-const poster17_1 = "imgs/poster/7th.png";
-const poster18_1 = "imgs/poster/bainian.png";
+const poster17_1 = "imgs/poster/7th/7th.png";
+const poster17_banner = "imgs/poster/7th/banner.png";
+
+const poster18_1 = "imgs/poster/bainian/bainian.png";
+const poster18_banner = "imgs/poster/bainian/banner.png";
 
 const project1_1 = "imgs/project/fenyuexigong/1.png";
 const project1_2 = "imgs/project/fenyuexigong/2.png";
@@ -83,7 +107,7 @@ const project2_1 = "imgs/project/guoweixianjing/pinpai-29.png";
 const project2_2 = "imgs/project/guoweixianjing/pinpai-30.png";
 const project2_3 = "imgs/project/guoweixianjing/pinpai-31.png";
 const project2_4 = "imgs/project/guoweixianjing/post-13.png";
-const project2_banner = "imgs/project/guoweixianjing/banner-11.png";
+const project2_banner = "imgs/project/guoweixianjing/banner.png";
 
 const project3_1 = "imgs/project/malasong/1.jpg";
 const project3_2 = "imgs/project/malasong/2.jpg";
@@ -133,9 +157,10 @@ const project8_banner = "imgs/project/yaoyao/banner.png";
 const project9_1 = "imgs/project/12345678/1.jpg";
 const project9_2 = "imgs/project/12345678/2.jpg";
 const project9_3 = "imgs/project/12345678/3.png";
-const project9_banner = "imgs/project/12345678/banner-13.png";
+const project9_banner = "imgs/project/12345678/banner.png";
 
-const project10_1 = "imgs/project/zhenanminju.jpg";
+const project10_1 = "imgs/project/zhenanminju/zhenanminju.jpg";
+const project10_banner = "imgs/project/zhenanminju/banner.png";
 
 const project11_1 = "imgs/project/yunpianjishuri/1.jpg";
 const project11_2 = "imgs/project/yunpianjishuri/2.jpg";
@@ -146,6 +171,14 @@ const project11_6 = "imgs/project/yunpianjishuri/6.png";
 const project11_7 = "imgs/project/yunpianjishuri/7.png";
 const project11_8 = "imgs/project/yunpianjishuri/8.png";
 const project11_9 = "imgs/project/yunpianjishuri/9.png";
+const project11_banner = "imgs/project/yunpianjishuri/banner.png";
+
+const project12_1 = "imgs/project/shuihuozhongguo/1.jpg";
+const project12_2 = "imgs/project/shuihuozhongguo/2.jpg";
+const project12_3 = "imgs/project/shuihuozhongguo/3.jpg";
+const project12_4 = "imgs/project/shuihuozhongguo/4.jpg";
+const project12_5 = "imgs/project/shuihuozhongguo/5.jpg";
+const project12_banner = "imgs/project/shuihuozhongguo/banner.png";
 
 const ui1_1 = "imgs/ui/DCSHOES/1.png";
 const ui1_banner = "imgs/ui/DCSHOES/banner.png";
@@ -158,6 +191,7 @@ const ui2_5 = "imgs/ui/yunnuandongri/5.png";
 const ui2_6 = "imgs/ui/yunnuandongri/6.png";
 const ui2_7 = "imgs/ui/yunnuandongri/7.gif";
 const ui2_8 = "imgs/ui/yunnuandongri/8.gif";
+const ui2_banner = "imgs/ui/yunnuandongri/banner.png";
 
 const logo_arr = [
   {
@@ -165,6 +199,7 @@ const logo_arr = [
     title: "恩施土家族自治州建州30周年",
     designer: "Tsui.",
     date: "YEAR 2017",
+    banner: logo1_banner,
     imgs: [logo1_1, logo1_2],
     tag: ["logo"]
   },
@@ -173,6 +208,7 @@ const logo_arr = [
     title: "中国丝绸博物馆",
     designer: "Tsui.",
     date: "YEAR 2017",
+    banner: logo2_banner,
     // client: "品牌全案设计",
     imgs: [logo2],
     tag: ["logo"]
@@ -244,6 +280,7 @@ const poster_arr = [
     title: "双十二",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster2_banner,
     imgs: [poster2],
     tag: ["poster"]
   },
@@ -260,6 +297,7 @@ const poster_arr = [
     title: "端午&618",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster4_banner,
     imgs: [poster4],
     tag: ["poster"]
   },
@@ -268,7 +306,8 @@ const poster_arr = [
     title: "霍⾦逝世",
     designer: "Tsui.",
     date: "YEAR 2018",
-    imgs: [poster5],
+    imgs: [poster5_1],
+    banner: poster5_banner,
     tag: ["poster"]
   },
   {
@@ -276,6 +315,7 @@ const poster_arr = [
     title: "冬至",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster6_banner,
     imgs: [poster6],
     tag: ["poster"]
   },
@@ -284,6 +324,7 @@ const poster_arr = [
     title: "五一",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster7_banner,
     imgs: [poster7_1, poster7_2, poster7_3],
     tag: ["poster"]
   },
@@ -292,6 +333,7 @@ const poster_arr = [
     title: "双旦",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster8_banner,
     imgs: [poster8_1, poster8_2, poster8_3],
     tag: ["poster"]
   },
@@ -300,6 +342,7 @@ const poster_arr = [
     title: "双⼗⼀",
     designer: "Tsui.",
     date: "YEAR 2019",
+    banner: poster9_banner,
     imgs: [poster9_1, poster9_2, poster9_3],
     tag: ["poster"]
   },
@@ -317,6 +360,7 @@ const poster_arr = [
     title: "稿事计划",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster11_banner,
     imgs: [poster11_1, poster11_2],
     tag: ["poster"]
   },
@@ -333,6 +377,7 @@ const poster_arr = [
     title: "年终盘点",
     designer: "Tsui.",
     date: "YEAR 2019",
+    banner: poster13_banner,
     imgs: [poster13_1, poster13_2, poster13_3],
     tag: ["poster", "project"]
   },
@@ -349,6 +394,7 @@ const poster_arr = [
     title: "发现亚洲",
     designer: "Tsui.",
     date: "YEAR 2019",
+    banner: poster15_banner,
     imgs: [poster15_1],
     tag: ["poster"]
   },
@@ -357,6 +403,7 @@ const poster_arr = [
     title: "315",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: poster16_banner,
     imgs: [poster16_1, poster16_2, poster16_3],
     tag: ["poster"]
   },
@@ -365,6 +412,8 @@ const poster_arr = [
     title: "企朋七周年",
     designer: "Tsui.",
     date: "YEAR 2019",
+    client: "C4D的新尝试",
+    banner: poster17_banner,
     imgs: [poster17_1],
     tag: ["poster"]
   },
@@ -373,6 +422,7 @@ const poster_arr = [
     title: "福猪图",
     designer: "Tsui.",
     date: "YEAR 2019",
+    banner: poster18_banner,
     imgs: [poster18_1],
     tag: ["poster"]
   }
@@ -384,7 +434,9 @@ const project_arr = [
     title: "粉越⻄贡",
     designer: "Tsui.",
     date: "YEAR 2018",
+    client: project1_client,
     banner: project1_banner,
+    isNode: true,
     imgs: [
       project1_1,
       project1_2,
@@ -400,6 +452,8 @@ const project_arr = [
     title: "果味仙境",
     designer: "Tsui.",
     date: "YEAR 2018",
+    client: project2_client,
+    isNode: true,
     banner: project2_banner,
     imgs: [project2_1, project2_2, project2_3, project2_4],
     tag: ["project", "logo", "package"]
@@ -454,6 +508,7 @@ const project_arr = [
     title: "设计⻝物所",
     designer: "Tsui.",
     date: "YEAR 2018",
+    client: "负责公众号的整体视觉形象设计及运营",
     banner: project6_banner,
     imgs: [project6_1, project6_2, project6_3],
     tag: ["project", "logo"]
@@ -488,6 +543,8 @@ const project_arr = [
     title: "12345678910",
     designer: "Tsui.",
     date: "YEAR 2018",
+    client: project9_client,
+    isNode: true,
     banner: project9_banner,
     imgs: [project9_1, project9_2, project9_3],
     tag: ["project", "logo"]
@@ -497,6 +554,7 @@ const project_arr = [
     title: "浙南⼭区古⺠居",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: project10_banner,
     imgs: [project10_1],
     tag: ["project", "logo"]
   },
@@ -505,6 +563,8 @@ const project_arr = [
     title: "云片技术开放日",
     designer: "Tsui.",
     date: "YEAR 2018",
+    client:
+      "公司主办的技术分享沙龙，每年会在全国多地举办,\n负责分享会主视觉设计、活动推⼴及活动物料设计，同时负责会议现场摄影及推⼴视频制作等⼯作",
     imgs: [
       project11_1,
       project11_2,
@@ -516,7 +576,17 @@ const project_arr = [
       project11_8,
       project11_9
     ],
+    banner: project11_banner,
     tag: ["project", "logo"]
+  },
+  {
+    id: 37,
+    title: "水祸中国",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    imgs: [project12_1, project12_2, project12_3, project12_4, project12_5],
+    banner: project12_banner,
+    tag: ["project"]
   }
 ];
 
@@ -535,6 +605,7 @@ const ui_arr = [
     title: "云暖冬⽇",
     designer: "Tsui.",
     date: "YEAR 2018",
+    banner: ui2_banner,
     imgs: [ui2_1, ui2_2, ui2_3, ui2_4, ui2_5, ui2_6, ui2_7, ui2_8],
     tag: ["UI", "project"]
   }

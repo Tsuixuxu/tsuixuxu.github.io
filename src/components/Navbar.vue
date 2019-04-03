@@ -70,11 +70,12 @@ export default {
   watch: {
     $route: function(val) {
       this.route = val.name;
+      this.active = val.query.tag;
+      scrollTo(0, 0);
     }
   },
   methods: {
     changeRoute() {
-      console.log("object");
       this.active = "";
     },
     selectChid(val) {

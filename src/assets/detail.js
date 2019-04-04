@@ -13,6 +13,7 @@ const logo2_banner = "imgs/logo/logo2/banner.png";
 
 const package1_1 = "imgs/package/calendar2018/1.jpg";
 const package1_2 = "imgs/package/calendar2018/2.png";
+const package1_3 = "imgs/package/calendar2018/3.png";
 const package1_banner = "imgs/package/calendar2018/banner.png";
 
 const package2_1 = "imgs/package/mid-autumn/1.jpg";
@@ -209,16 +210,24 @@ const ui2_7 = "imgs/ui/yunnuandongri/7.gif";
 const ui2_8 = "imgs/ui/yunnuandongri/8.gif";
 const ui2_banner = "imgs/ui/yunnuandongri/banner.png";
 
-const package_arr = [
+const arr1 = [
   {
     id: 1,
-    title: "年历",
+    title: "粉越⻄贡",
     designer: "Tsui.",
     date: "YEAR 2018",
-    // client: "品牌全案设计",
-    banner: package1_banner,
-    imgs: [package1_2, package1_1],
-    tag: ["package"]
+    client: project1_client,
+    banner: project1_banner,
+    isNode: true,
+    imgs: [
+      project1_1,
+      project1_2,
+      project1_3,
+      project1_4,
+      project1_5,
+      project1_6
+    ],
+    tag: ["project", "logo", "package"]
   },
   {
     id: 2,
@@ -243,80 +252,96 @@ const package_arr = [
   },
   {
     id: 3,
-    title: "年礼贺卡",
+    title: "年终盘点(SIMBOSS)",
     designer: "Tsui.",
     date: "YEAR 2019",
-    banner: package3_banner,
-    imgs: [
-      package3_1,
-      package3_2,
-      package3_3,
-      package3_4,
-      package3_5,
-      package3_6,
-      package3_7
-    ],
-    tag: ["package"]
-  }
-];
-
-const poster_arr = [
+    banner: poster13_banner,
+    imgs: [poster13_1],
+    tag: ["poster", "project"]
+  },
   {
     id: 4,
-    title: "放粽618",
+    title: "企朋七周年",
     designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: poster4_banner,
-    imgs: [poster4],
+    date: "YEAR 2019",
+    client: "C4D的新尝试",
+    banner: poster17_banner,
+    imgs: [poster17_1],
     tag: ["poster"]
   },
   {
     id: 5,
-    title: "霍⾦逝世",
+    title: "稿事计划",
     designer: "Tsui.",
     date: "YEAR 2018",
-    imgs: [poster5_1],
-    banner: poster5_banner,
+    banner: poster11_banner,
+    imgs: [poster11_2, poster11_1],
     tag: ["poster"]
   },
   {
     id: 6,
-    title: "冬至",
+    title: "奔跑吧，程序员",
     designer: "Tsui.",
     date: "YEAR 2018",
-    banner: poster6_banner,
-    imgs: [poster6],
-    tag: ["poster"]
+    banner: project3_banner,
+    imgs: [
+      project3_6,
+      project3_7,
+      project3_8,
+      project3_9,
+      project3_10,
+      project3_1,
+      project3_2,
+      project3_3,
+      project3_4,
+      project3_5
+    ],
+    tag: ["project", "logo"]
   },
   {
     id: 7,
-    title: "五一",
+    title: "福猪图",
     designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: poster7_banner,
-    imgs: [poster7_1, poster7_2, poster7_3],
+    date: "YEAR 2019",
+    banner: poster18_banner,
+    imgs: [poster18_1],
     tag: ["poster"]
   },
   {
     id: 8,
-    title: "双旦",
+    title: "年历",
     designer: "Tsui.",
     date: "YEAR 2018",
-    banner: poster8_banner,
-    imgs: [poster8_1, poster8_2, poster8_3],
-    tag: ["poster"]
+    // client: "品牌全案设计",
+    banner: package1_banner,
+    imgs: [package1_2, package1_3, package1_1],
+    tag: ["package"]
   },
   {
     id: 9,
-    title: "双⼗⼀",
+    title: "果味仙境",
     designer: "Tsui.",
-    date: "YEAR 2019",
-    banner: poster9_banner,
-    imgs: [poster9_1, poster9_2, poster9_3],
-    tag: ["poster"]
+    date: "YEAR 2018",
+    client: project2_client,
+    isNode: true,
+    banner: project2_banner,
+    imgs: [project2_1, project2_2, project2_3, project2_4],
+    tag: ["project", "logo", "package"]
   },
   {
     id: 10,
+    title: "撒椒",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: project5_banner,
+    imgs: [project5_1, project5_2, project5_3, project5_4],
+    tag: ["project", "logo", "package"]
+  }
+];
+
+const arr2 = [
+  {
+    id: 11,
     title: "新年拜年",
     designer: "Tsui.",
     date: "YEAR 2019",
@@ -341,173 +366,25 @@ const poster_arr = [
     tag: ["poster"]
   },
   {
-    id: 11,
-    title: "双十二",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: poster2_banner,
-    imgs: [poster2],
-    tag: ["poster"]
-  },
-  {
     id: 12,
-    title: "稿事计划",
+    title: "双⼗⼀",
     designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: poster11_banner,
-    imgs: [poster11_1, poster11_2],
+    date: "YEAR 2019",
+    banner: poster9_banner,
+    imgs: [poster9_1, poster9_2, poster9_3],
     tag: ["poster"]
   },
   {
     id: 13,
-    title: "校招",
+    title: "云暖冬⽇",
     designer: "Tsui.",
-    date: "YEAR 2019",
-    imgs: [poster12_1, poster12_2],
-    tag: ["poster"]
+    date: "YEAR 2018",
+    banner: ui2_banner,
+    imgs: [ui2_1, ui2_2, ui2_3, ui2_4, ui2_5, ui2_6, ui2_7, ui2_8],
+    tag: ["UI", "project"]
   },
   {
     id: 14,
-    title: "年终盘点(SIMBOSS)",
-    designer: "Tsui.",
-    date: "YEAR 2019",
-    banner: poster13_banner,
-    imgs: [poster13_1],
-    tag: ["poster", "project"]
-  },
-  {
-    id: 15,
-    title: "年终盘点(云片)",
-    designer: "Tsui.",
-    date: "YEAR 2019",
-    banner: poster13_banner2,
-    imgs: [poster13_2],
-    tag: ["poster", "project"]
-  },
-  {
-    id: 16,
-    title: "年终盘点(维客)",
-    designer: "Tsui.",
-    date: "YEAR 2019",
-    banner: poster13_banner3,
-    imgs: [poster13_3],
-    tag: ["poster", "project"]
-  },
-  {
-    id: 17,
-    title: "⽹易考拉",
-    designer: "Tsui.",
-    date: "YEAR 2019",
-    imgs: [poster14_1],
-    tag: ["poster"]
-  },
-  {
-    id: 18,
-    title: "315",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: poster16_banner,
-    imgs: [poster16_1, poster16_2, poster16_3],
-    tag: ["poster"]
-  },
-  {
-    id: 19,
-    title: "企朋七周年",
-    designer: "Tsui.",
-    date: "YEAR 2019",
-    client: "C4D的新尝试",
-    banner: poster17_banner,
-    imgs: [poster17_1],
-    tag: ["poster"]
-  },
-  {
-    id: 20,
-    title: "福猪图",
-    designer: "Tsui.",
-    date: "YEAR 2019",
-    banner: poster18_banner,
-    imgs: [poster18_1],
-    tag: ["poster"]
-  }
-];
-
-const project_arr = [
-  {
-    id: 21,
-    title: "粉越⻄贡",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    client: project1_client,
-    banner: project1_banner,
-    isNode: true,
-    imgs: [
-      project1_1,
-      project1_2,
-      project1_3,
-      project1_4,
-      project1_5,
-      project1_6
-    ],
-    tag: ["project", "logo", "package"]
-  },
-  {
-    id: 22,
-    title: "果味仙境",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    client: project2_client,
-    isNode: true,
-    banner: project2_banner,
-    imgs: [project2_1, project2_2, project2_3, project2_4],
-    tag: ["project", "logo", "package"]
-  },
-  {
-    id: 23,
-    title: "奔跑吧，程序员",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: project3_banner,
-    imgs: [
-      project3_6,
-      project3_7,
-      project3_8,
-      project3_9,
-      project3_10,
-      project3_1,
-      project3_2,
-      project3_3,
-      project3_4,
-      project3_5
-    ],
-    tag: ["project", "logo"]
-  },
-  {
-    id: 24,
-    title: "群芳蒸宴",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: project4_banner,
-    imgs: [
-      project4_1,
-      project4_2,
-      project4_3,
-      project4_4,
-      project4_5,
-      project4_6
-    ],
-    tag: ["project", "logo", "package"]
-  },
-  {
-    id: 25,
-    title: "撒椒",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: project5_banner,
-    imgs: [project5_1, project5_2, project5_3, project5_4],
-    tag: ["project", "logo", "package"]
-  },
-  {
-    id: 26,
     title: "设计⻝物所",
     designer: "Tsui.",
     date: "YEAR 2018",
@@ -517,23 +394,24 @@ const project_arr = [
     tag: ["project", "logo"]
   },
   {
-    id: 27,
-    title: "炭舍",
+    id: 15,
+    title: "年礼贺卡",
     designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: project7_banner,
+    date: "YEAR 2019",
+    banner: package3_banner,
     imgs: [
-      project7_1,
-      project7_2,
-      project7_3,
-      project7_4,
-      project7_5,
-      project7_6
+      package3_1,
+      package3_2,
+      package3_3,
+      package3_4,
+      package3_5,
+      package3_6,
+      package3_7
     ],
-    tag: ["project", "logo", "package"]
+    tag: ["package"]
   },
   {
-    id: 28,
+    id: 16,
     title: "姚姚",
     designer: "Tsui.",
     date: "YEAR 2018",
@@ -542,27 +420,25 @@ const project_arr = [
     tag: ["project", "logo", "package"]
   },
   {
-    id: 29,
-    title: "12345678910",
+    id: 17,
+    title: "双十二",
     designer: "Tsui.",
     date: "YEAR 2018",
-    client: project9_client,
-    isNode: true,
-    banner: project9_banner,
-    imgs: [project9_2, project9_1, project9_3],
-    tag: ["project", "logo"]
+    banner: poster2_banner,
+    imgs: [poster2],
+    tag: ["poster"]
   },
   {
-    id: 30,
-    title: "浙南⼭区古⺠居",
+    id: 18,
+    title: "双旦",
     designer: "Tsui.",
     date: "YEAR 2018",
-    banner: project10_banner,
-    imgs: [project10_1],
-    tag: ["project", "logo"]
+    banner: poster8_banner,
+    imgs: [poster8_1, poster8_2, poster8_3],
+    tag: ["poster"]
   },
   {
-    id: 31,
+    id: 19,
     title: "云片技术开放日",
     designer: "Tsui.",
     date: "YEAR 2018",
@@ -583,19 +459,124 @@ const project_arr = [
     tag: ["project", "logo"]
   },
   {
-    id: 32,
-    title: "水祸中国",
+    id: 20,
+    title: "冬至",
     designer: "Tsui.",
     date: "YEAR 2018",
-    imgs: [project12_1, project12_2, project12_3, project12_4, project12_5],
-    banner: project12_banner,
-    tag: ["project"]
+    banner: poster6_banner,
+    imgs: [poster6],
+    tag: ["poster"]
   }
 ];
 
-const logo_arr = [
+const arr3 = [
+  {
+    id: 31,
+    title: "放粽618",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: poster4_banner,
+    imgs: [poster4],
+    tag: ["poster"]
+  },
+  {
+    id: 32,
+    title: "315",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: poster16_banner,
+    imgs: [poster16_1, poster16_2, poster16_3],
+    tag: ["poster"]
+  },
   {
     id: 33,
+    title: "炭舍",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: project7_banner,
+    imgs: [
+      project7_1,
+      project7_2,
+      project7_3,
+      project7_4,
+      project7_5,
+      project7_6
+    ],
+    tag: ["project", "logo", "package"]
+  },
+  {
+    id: 34,
+    title: "年终盘点(云片)",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    banner: poster13_banner2,
+    imgs: [poster13_2],
+    tag: ["poster", "project"]
+  },
+  {
+    id: 35,
+    title: "年终盘点(维客)",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    banner: poster13_banner3,
+    imgs: [poster13_3],
+    tag: ["poster", "project"]
+  },
+  {
+    id: 36,
+    title: "五一",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: poster7_banner,
+    imgs: [poster7_1, poster7_2, poster7_3],
+    tag: ["poster"]
+  },
+  {
+    id: 37,
+    title: "霍⾦逝世",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    imgs: [poster5_1],
+    banner: poster5_banner,
+    tag: ["poster"]
+  },
+  {
+    id: 38,
+    title: "校招",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [poster12_1, poster12_2],
+    tag: ["poster"]
+  },
+  {
+    id: 39,
+    title: "⽹易考拉",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [poster14_1],
+    tag: ["poster"]
+  },
+  {
+    id: 40,
+    title: "群芳蒸宴",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: project4_banner,
+    imgs: [
+      project4_1,
+      project4_2,
+      project4_3,
+      project4_4,
+      project4_5,
+      project4_6
+    ],
+    tag: ["project", "logo", "package"]
+  }
+];
+
+const arr4 = [
+  {
+    id: 41,
     title: "1024",
     designer: "Tsui.",
     date: "YEAR 2018",
@@ -603,7 +584,7 @@ const logo_arr = [
     tag: ["poster"]
   },
   {
-    id: 34,
+    id: 42,
     title: "发现亚洲",
     designer: "Tsui.",
     date: "YEAR 2019",
@@ -612,7 +593,7 @@ const logo_arr = [
     tag: ["poster"]
   },
   {
-    id: 35,
+    id: 43,
     title: "世界电信日",
     designer: "Tsui.",
     date: "YEAR 2018",
@@ -620,7 +601,36 @@ const logo_arr = [
     tag: ["poster"]
   },
   {
-    id: 36,
+    id: 44,
+    title: "12345678910",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    client: project9_client,
+    isNode: true,
+    banner: project9_banner,
+    imgs: [project9_2, project9_1, project9_3],
+    tag: ["project", "logo"]
+  },
+  {
+    id: 45,
+    title: "浙南⼭区古⺠居",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: project10_banner,
+    imgs: [project10_1],
+    tag: ["project", "logo"]
+  },
+  {
+    id: 46,
+    title: "水祸中国",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    imgs: [project12_1, project12_2, project12_3, project12_4, project12_5],
+    banner: project12_banner,
+    tag: ["project"]
+  },
+  {
+    id: 47,
     title: "恩施土家族自治州建州30周年",
     designer: "Tsui.",
     date: "YEAR 2017",
@@ -629,7 +639,7 @@ const logo_arr = [
     tag: ["logo"]
   },
   {
-    id: 37,
+    id: 48,
     title: "中国丝绸博物馆",
     designer: "Tsui.",
     date: "YEAR 2017",
@@ -637,36 +647,18 @@ const logo_arr = [
     // client: "品牌全案设计",
     imgs: [logo2],
     tag: ["logo"]
-  }
-];
-
-const ui_arr = [
+  },
   {
-    id: 38,
+    id: 49,
     title: "DC shoes",
     designer: "Tsui.",
     date: "YEAR 2018",
     banner: ui1_banner,
     imgs: [ui1_1],
     tag: ["UI"]
-  },
-  {
-    id: 39,
-    title: "云暖冬⽇",
-    designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: ui2_banner,
-    imgs: [ui2_1, ui2_2, ui2_3, ui2_4, ui2_5, ui2_6, ui2_7, ui2_8],
-    tag: ["UI", "project"]
   }
 ];
 
-const articles = [
-  ...package_arr,
-  ...poster_arr,
-  ...project_arr,
-  ...ui_arr,
-  ...logo_arr
-];
+const articles = [...arr1, ...arr2, ...arr3, ...arr4];
 
 export default articles;

@@ -4,12 +4,12 @@
       <div class="title">
         {{ article.title }}
       </div>
-      <div class="designer">
+      <!-- <div class="designer">
         {{ article.designer }}
       </div>
       <div class="date" v-if="article && article.date">
         {{ article.date }}
-      </div>
+      </div> -->
       <pre
         class="client"
         v-if="article && (article.client && !article.isNode)"
@@ -28,7 +28,12 @@
         >
       </div>
     </div>
-    <div class="img" v-for="(img, index) in imgs" :key="index">
+    <div
+      class="img"
+      :class="{ 'no-margin': article.noMargin }"
+      v-for="(img, index) in imgs"
+      :key="index"
+    >
       <img class="protectImg" v-lazy="img" alt="" />
     </div>
   </div>
@@ -119,6 +124,7 @@ export default {
   },
   mounted() {
     this.toTop();
+    console.log(this.article);
     this.$nextTick(() => {
       this.preventHandler();
     });
@@ -131,7 +137,7 @@ export default {
   .title {
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .designer,
   .date,
@@ -141,7 +147,7 @@ export default {
   .quick-wrapper {
     position: absolute;
     left: 910px;
-    top: 10px;
+    top: 0px;
     .pre {
       margin-right: 10px;
       cursor: pointer;
@@ -152,11 +158,15 @@ export default {
   }
 }
 .img {
-  margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 960px;
 
   img {
     width: 100%;
+  }
+
+  &.no-margin {
+    margin-bottom: -4px;
   }
 }
 </style>

@@ -10,7 +10,7 @@ Vue.use(VueLazyload);
 Vue.use(VueLazyload, {
   preLoad: 1.3,
   loading: require("./assets/loading.gif"),
-  attempt: 1
+  attempt: 3
 });
 
 Vue.config.productionTip = false;

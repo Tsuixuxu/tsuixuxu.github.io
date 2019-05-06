@@ -36,6 +36,10 @@
     >
       <img class="protectImg" v-lazy="img" alt="" />
     </div>
+    <component
+      v-if="article && (article.bottom && article.bottomisNode)"
+      :is="article.bottom"
+    />
   </div>
 </template>
 <script>

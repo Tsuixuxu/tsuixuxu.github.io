@@ -39,15 +39,15 @@
 <script>
 const types = [
   {
-    name: "project",
+    name: "项目",
     tag: "project"
   },
   {
-    name: "poster",
+    name: "海报",
     tag: "poster"
   },
   {
-    name: "package",
+    name: "包装",
     tag: "package"
   },
   {

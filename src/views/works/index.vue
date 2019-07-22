@@ -26,8 +26,9 @@ export default {
   },
   data() {
     return {
-      articles: [...articles],
-      tag: ""
+      articles: [],
+      tag: "",
+      initArts: []
     };
   },
   watch: {
@@ -37,18 +38,28 @@ export default {
     }
   },
   methods: {
+    initArticles() {
+      let arr = articles.map((item, index) => {
+        return {
+          ...item,
+          id: index
+        };
+      });
+      return arr;
+    },
     chooseType(tag) {
       if (!tag) {
-        this.$set(this.$data, "articles", articles);
+        this.$set(this.$data, "articles", this.initArts);
         return;
       }
-      const arr = articles.filter(item => {
+      const arr = this.initArts.filter(item => {
         return item.tag.includes(tag);
       });
       this.$set(this.$data, "articles", arr);
     }
   },
   mounted() {
+    this.articles = this.initArts = this.initArticles();
     this.route = this.$route.name;
     let tag = this.$route.query.tag;
     this.chooseType(tag);

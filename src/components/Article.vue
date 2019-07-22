@@ -20,7 +20,7 @@
         :is="article.client"
       />
       <div class="quick-wrapper">
-        <i class="iconfont pre" @click="goPre" v-if="article.id > 1">
+        <i class="iconfont pre" @click="goPre" v-if="article.id > 0">
           &#xe618;
         </i>
         <i v-if="count > article.id" class="iconfont next" @click="goNext"
@@ -128,7 +128,6 @@ export default {
   },
   mounted() {
     this.toTop();
-    console.log(this.article);
     this.$nextTick(() => {
       this.preventHandler();
     });

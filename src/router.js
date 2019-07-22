@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: "/",
-      redirect: "works"
+      redirect: "about"
     },
     {
       path: "/works",

@@ -194,6 +194,7 @@ const project11_6 = "imgs/project/yunpianjishuri/6.png";
 const project11_7 = "imgs/project/yunpianjishuri/7.png";
 const project11_8 = "imgs/project/yunpianjishuri/8.png";
 const project11_9 = "imgs/project/yunpianjishuri/9.png";
+const project11_10 = "imgs/project/yunpianjishuri/10.jpeg";
 const project11_banner = "imgs/project/yunpianjishuri/banner.png";
 
 const project12_1 = "imgs/project/shuihuozhongguo/1.jpg";
@@ -216,7 +217,14 @@ const ui2_7 = "imgs/ui/yunnuandongri/7.gif";
 const ui2_8 = "imgs/ui/yunnuandongri/8.gif";
 const ui2_banner = "imgs/ui/yunnuandongri/banner.png";
 
-const arr1 = [
+const ui3_1 = "imgs/ui/quanqudao/1.png";
+const ui3_2 = "imgs/ui/quanqudao/2.png";
+const ui3_3 = "imgs/ui/quanqudao/3.png";
+const ui3_4 = "imgs/ui/quanqudao/4.png";
+const ui3_5 = "imgs/ui/quanqudao/5.png";
+const ui3_banner = "imgs/ui/quanqudao/1.png";
+
+const articles = [
   {
     id: 1,
     title: "粉越⻄贡",
@@ -285,25 +293,17 @@ const arr1 = [
     tag: ["poster"]
   },
   {
-    id: 6,
-    title: "奔跑吧，程序员",
+    id: 13,
+    title: "微信漫画",
     designer: "Tsui.",
-    date: "YEAR 2018",
-    banner: project3_banner,
-    imgs: [
-      project3_6,
-      project3_7,
-      project3_8,
-      project3_9,
-      project3_10,
-      project3_1,
-      project3_2,
-      project3_3,
-      project3_4,
-      project3_5
-    ],
-    tag: ["project", "logo"]
+    date: "YEAR 2019",
+    bottom: poster13_bottom,
+    bottomisNode: true,
+    banner: poster19_banner,
+    imgs: [poster19_1, poster19_2, poster19_4],
+    tag: ["poster"]
   },
+
   {
     id: 7,
     title: "福猪图",
@@ -335,17 +335,13 @@ const arr1 = [
     tag: ["project", "logo", "package"]
   },
   {
-    id: 10,
-    title: "撒椒",
+    title: "推广活动页",
     designer: "Tsui.",
     date: "YEAR 2018",
-    banner: project5_banner,
-    imgs: [project5_1, project5_2, project5_3, project5_4],
-    tag: ["project", "logo", "package"]
-  }
-];
-
-const arr2 = [
+    banner: ui3_banner,
+    imgs: [ui3_1, ui3_2, ui3_3, ui3_4, ui3_5],
+    tag: ["UI", "project"]
+  },
   {
     id: 11,
     title: "新年拜年",
@@ -381,15 +377,24 @@ const arr2 = [
     tag: ["poster"]
   },
   {
-    id: 13,
-    title: "微信漫画",
+    id: 6,
+    title: "奔跑吧，程序员",
     designer: "Tsui.",
-    date: "YEAR 2019",
-    bottom: poster13_bottom,
-    bottomisNode: true,
-    banner: poster19_banner,
-    imgs: [poster19_1, poster19_2, poster19_4],
-    tag: ["poster"]
+    date: "YEAR 2018",
+    banner: project3_banner,
+    imgs: [
+      project3_6,
+      project3_7,
+      project3_8,
+      project3_9,
+      project3_10,
+      project3_1,
+      project3_2,
+      project3_3,
+      project3_4,
+      project3_5
+    ],
+    tag: ["project", "logo"]
   },
   {
     id: 14,
@@ -428,6 +433,15 @@ const arr2 = [
     tag: ["package"]
   },
   {
+    id: 10,
+    title: "撒椒",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: project5_banner,
+    imgs: [project5_1, project5_2, project5_3, project5_4],
+    tag: ["project", "logo", "package"]
+  },
+  {
     id: 17,
     title: "姚姚",
     designer: "Tsui.",
@@ -464,6 +478,7 @@ const arr2 = [
     imgs: [
       project11_6,
       project11_7,
+      project11_10,
       project11_8,
       project11_9,
       project11_1,
@@ -483,10 +498,8 @@ const arr2 = [
     banner: poster6_banner,
     imgs: [poster6],
     tag: ["poster"]
-  }
-];
+  },
 
-const arr3 = [
   {
     id: 22,
     title: "放粽618",
@@ -588,10 +601,8 @@ const arr3 = [
       project4_6
     ],
     tag: ["project", "logo", "package"]
-  }
-];
+  },
 
-const arr4 = [
   {
     id: 32,
     title: "1024",
@@ -675,7 +686,5 @@ const arr4 = [
     tag: ["UI"]
   }
 ];
-
-const articles = [...arr1, ...arr2, ...arr3, ...arr4];
 
 export default articles;

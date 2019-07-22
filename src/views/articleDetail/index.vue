@@ -16,6 +16,7 @@ export default {
   },
   data() {
     return {
+      articles: [],
       article: {
         title: "111"
       },
@@ -27,8 +28,8 @@ export default {
     $route: {
       handler() {
         this.id = this.$route.query.id;
-        this.count = articles.length;
-        articles.forEach(item => {
+        this.count = this.articles.length;
+        this.articles.forEach(item => {
           if (String(item.id) === String(this.id)) {
             this.$set(this.$data, "article", { ...item });
             return;
@@ -38,17 +39,30 @@ export default {
     },
     deep: true
   },
+  methods: {
+    initArticles() {
+      let arr = articles.map((item, index) => {
+        return {
+          ...item,
+          id: index
+        };
+      });
+      return arr;
+    }
+  },
   mounted() {
     this.id = this.$route.query.id;
 
-    articles.forEach(item => {
+    this.articles = this.initArticles();
+
+    this.articles.forEach(item => {
       if (String(item.id) === String(this.id)) {
         this.$set(this.$data, "article", { ...item });
         return;
       }
     });
 
-    this.count = articles.length;
+    this.count = this.articles.length;
   }
 };
 </script>

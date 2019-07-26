@@ -224,6 +224,23 @@ const ui3_4 = "imgs/ui/quanqudao/4.png";
 const ui3_5 = "imgs/ui/quanqudao/5.png";
 const ui3_banner = "imgs/ui/quanqudao/1.png";
 
+const poster20_1 = "imgs/poster/superMsg/1_01.png";
+const poster20_2 = "imgs/poster/superMsg/1_02.png";
+const poster20_3 = "imgs/poster/superMsg/1_03.png";
+const poster20_4 = "imgs/poster/superMsg/2_01.png";
+const poster20_5 = "imgs/poster/superMsg/2_01.png";
+const poster20_6 = "imgs/poster/superMsg/2_03.png";
+const poster20_7 = "imgs/poster/superMsg/3_01.png";
+const poster20_8 = "imgs/poster/superMsg/3_02.png";
+const poster20_9 = "imgs/poster/superMsg/3_04.png";
+const poster20_10 = "imgs/poster/superMsg/3_05.png";
+const poster20_11 = "imgs/poster/superMsg/3_07.png";
+const poster20_12 = "imgs/poster/superMsg/3_08.png";
+const poster20_13 = "imgs/poster/superMsg/4.png";
+const poster20_banner = "imgs/poster/superMsg/4.png";
+
+const handDrawn_1 = "imgs/handDrawn/1.jpeg";
+
 const articles = [
   {
     id: 1,
@@ -301,7 +318,30 @@ const articles = [
     bottomisNode: true,
     banner: poster19_banner,
     imgs: [poster19_1, poster19_2, poster19_4],
-    tag: ["poster"]
+    tag: ["poster", "handDrawn"]
+  },
+
+  {
+    title: "超级短信",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    banner: poster20_banner,
+    imgs: [
+      poster20_1,
+      poster20_2,
+      poster20_3,
+      poster20_4,
+      poster20_5,
+      poster20_6,
+      poster20_7,
+      poster20_8,
+      poster20_9,
+      poster20_10,
+      poster20_11,
+      poster20_12,
+      poster20_13
+    ],
+    tag: ["poster", "handDrawn"]
   },
 
   {
@@ -431,6 +471,13 @@ const articles = [
       package3_7
     ],
     tag: ["package"]
+  },
+  {
+    title: "Lion Ling",
+    designer: "Tsui.",
+    date: "YEAR 2018",
+    imgs: [handDrawn_1],
+    tag: ["handDrawn"]
   },
   {
     id: 10,

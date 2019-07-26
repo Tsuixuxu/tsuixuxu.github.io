@@ -57,6 +57,10 @@ const types = [
   {
     name: "UI",
     tag: "UI"
+  },
+  {
+    name: "手绘",
+    tag: "handDrawn"
   }
 ];
 export default {

@@ -171,5 +171,10 @@ export default {
   &.no-margin {
     margin-bottom: -4px;
   }
+  img[lazy=loading] {
+    width: 300px !important;
+    margin: 0 auto;
+    display: block;
+  }
 }
 </style>

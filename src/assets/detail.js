@@ -97,7 +97,7 @@ const poster13_banner = "imgs/poster/terminal/banner.png";
 const poster13_banner2 = "imgs/poster/terminal/banner2.png";
 const poster13_banner3 = "imgs/poster/terminal/banner3.png";
 
-const poster14_1 = "imgs/poster/pinpai.png";
+// const poster14_1 = "imgs/poster/pinpai.png";
 
 const poster15_1 = "imgs/poster/faxianshanghai/faxianshanghai.jpg";
 const poster15_banner = "imgs/poster/faxianshanghai/banner.png";
@@ -222,6 +222,7 @@ const ui3_2 = "imgs/ui/quanqudao/2.png";
 const ui3_3 = "imgs/ui/quanqudao/3.png";
 const ui3_4 = "imgs/ui/quanqudao/4.png";
 const ui3_5 = "imgs/ui/quanqudao/5.png";
+const ui3_6 = "imgs/ui/quanqudao/6.png";
 const ui3_banner = "imgs/ui/quanqudao/1.png";
 
 const poster20_1 = "imgs/poster/superMsg/1_01.png";
@@ -237,7 +238,7 @@ const poster20_10 = "imgs/poster/superMsg/3_05.png";
 const poster20_11 = "imgs/poster/superMsg/3_07.png";
 const poster20_12 = "imgs/poster/superMsg/3_08.png";
 const poster20_13 = "imgs/poster/superMsg/4.png";
-const poster20_banner = "imgs/poster/superMsg/4.png";
+const poster20_banner = "imgs/poster/superMsg/banner.png";
 
 const handDrawn_1 = "imgs/handDrawn/1.jpeg";
 
@@ -378,8 +379,9 @@ const articles = [
     title: "推广活动页",
     designer: "Tsui.",
     date: "YEAR 2018",
+    noMargin: true,
     banner: ui3_banner,
-    imgs: [ui3_1, ui3_2, ui3_3, ui3_4, ui3_5],
+    imgs: [ui3_6, ui3_1, ui3_2, ui3_3, ui3_4, ui3_5],
     tag: ["UI", "project"]
   },
   {
@@ -524,8 +526,8 @@ const articles = [
       "公司主办的技术分享沙龙，每年会在全国多地举办,\n负责分享会主视觉设计、活动推⼴及活动物料设计，同时负责会议现场摄影及推⼴视频制作等⼯作",
     imgs: [
       project11_6,
-      project11_7,
       project11_10,
+      project11_7,
       project11_8,
       project11_9,
       project11_1,

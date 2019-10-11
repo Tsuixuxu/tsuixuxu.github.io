@@ -3,6 +3,7 @@ import package2_client from "./works/package/MidAutumn.vue";
 import project1_client from "./works/project/Fenyuexigong.vue";
 import project2_client from "./works/project/Guoweixianjing.vue";
 import project9_client from "./works/project/123456789.vue";
+import project13_client from "./works/project/MidAutumn2019.vue";
 import poster13_bottom from "./works/poster/wechatCartoon.vue";
 
 const logo1_1 = "imgs/logo/logo1/logo1_1.jpg";
@@ -241,8 +242,52 @@ const poster20_13 = "imgs/poster/superMsg/4.png";
 const poster20_banner = "imgs/poster/superMsg/banner.png";
 
 const handDrawn_1 = "imgs/handDrawn/1.jpeg";
+const handDrawn_2 = "imgs/handDrawn/brotherOctoPus/1.png";
+const handDrawn_2_banner = "imgs/handDrawn/brotherOctoPus/banner.png";
+const handDrawn_3 = "imgs/handDrawn/bigSurprises/bigSurprises.png";
+const handDrawn_3_banner = "imgs/handDrawn/bigSurprises/bigSurprises.png";
+
+const project13_1 = "imgs/project/mid-autumn2019/1.png";
+const project13_2 = "imgs/project/mid-autumn2019/2.png";
+const project13_3 = "imgs/project/mid-autumn2019/3.png";
+const project13_4 = "imgs/project/mid-autumn2019/4.png";
+const project13_5 = "imgs/project/mid-autumn2019/5.png";
+const project13_6 = "imgs/project/mid-autumn2019/6.png";
+const project13_7 = "imgs/project/mid-autumn2019/7.png";
+const project13_9 = "imgs/project/mid-autumn2019/9.png";
+const project13_10 = "imgs/project/mid-autumn2019/10.png";
+const project13_11 = "imgs/project/mid-autumn2019/11.png";
+const project13_12 = "imgs/project/mid-autumn2019/12.png";
+const project13_13 = "imgs/project/mid-autumn2019/13.png";
+const project13_14 = "imgs/project/mid-autumn2019/14.png";
+const project13_banner = "imgs/project/mid-autumn2019/banner.png";
 
 const articles = [
+  {
+    title: "2019中秋礼盒",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    client: project13_client,
+    banner: project13_banner,
+    isNode: true,
+    noMargin: true,
+    imgs: [
+      project13_1,
+      project13_2,
+      project13_3,
+      project13_4,
+      project13_5,
+      project13_6,
+      project13_7,
+      project13_9,
+      project13_10,
+      project13_11,
+      project13_12,
+      project13_13,
+      project13_14
+    ],
+    tag: ["project"]
+  },
   {
     id: 1,
     title: "粉越⻄贡",
@@ -263,7 +308,7 @@ const articles = [
   },
   {
     id: 2,
-    title: "中秋礼盒",
+    title: "2018中秋礼盒",
     designer: "Tsui.",
     date: "YEAR 2018",
     banner: package2_banner,
@@ -293,7 +338,7 @@ const articles = [
   },
   {
     id: 4,
-    title: "企朋七周年",
+    title: "企朋七周年 - C4D",
     designer: "Tsui.",
     date: "YEAR 2019",
     client: "C4D的新尝试",
@@ -319,13 +364,13 @@ const articles = [
     bottomisNode: true,
     banner: poster19_banner,
     imgs: [poster19_1, poster19_2, poster19_4],
-    tag: ["poster", "handDrawn"]
+    tag: ["poster", "hand drawn"]
   },
 
   {
-    title: "超级短信",
+    title: "微信漫画2",
     designer: "Tsui.",
-    date: "YEAR 2018",
+    date: "YEAR 2019",
     banner: poster20_banner,
     imgs: [
       poster20_1,
@@ -342,7 +387,7 @@ const articles = [
       poster20_12,
       poster20_13
     ],
-    tag: ["poster", "handDrawn"]
+    tag: ["poster", "hand drawn"]
   },
 
   {
@@ -352,7 +397,7 @@ const articles = [
     date: "YEAR 2019",
     banner: poster18_banner,
     imgs: [poster18_1],
-    tag: ["poster"]
+    tag: ["poster", "hand drawn"]
   },
   {
     id: 8,
@@ -362,7 +407,7 @@ const articles = [
     // client: "品牌全案设计",
     banner: package1_banner,
     imgs: [package1_2, package1_3, package1_1],
-    tag: ["package"]
+    tag: ["package", "hand drawn"]
   },
   {
     id: 9,
@@ -479,7 +524,23 @@ const articles = [
     designer: "Tsui.",
     date: "YEAR 2018",
     imgs: [handDrawn_1],
-    tag: ["handDrawn"]
+    tag: ["hand drawn"]
+  },
+  {
+    title: "Brother Octopus - C4D",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [handDrawn_2],
+    banner: handDrawn_2_banner,
+    tag: ["hand drawn"]
+  },
+  {
+    title: "Big Surprises - C4D",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [handDrawn_3],
+    banner: handDrawn_3_banner,
+    tag: ["hand drawn"]
   },
   {
     id: 10,

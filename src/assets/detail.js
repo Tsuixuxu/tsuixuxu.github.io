@@ -246,6 +246,7 @@ const handDrawn_2 = "imgs/handDrawn/brotherOctoPus/1.png";
 const handDrawn_2_banner = "imgs/handDrawn/brotherOctoPus/banner.png";
 const handDrawn_3 = "imgs/handDrawn/bigSurprises/bigSurprises.png";
 const handDrawn_3_banner = "imgs/handDrawn/bigSurprises/bigSurprises.png";
+const handDrawn_4 = "imgs/handDrawn/christmas/1.jpg";
 
 const project13_1 = "imgs/project/mid-autumn2019/1.png";
 const project13_2 = "imgs/project/mid-autumn2019/2.png";
@@ -329,7 +330,7 @@ const articles = [
   },
   {
     id: 3,
-    title: "年终盘点(SIMBOSS)",
+    title: "年终盘点1",
     designer: "Tsui.",
     date: "YEAR 2019",
     banner: poster13_banner,
@@ -357,7 +358,7 @@ const articles = [
   },
   {
     id: 13,
-    title: "微信漫画",
+    title: "微信漫画1",
     designer: "Tsui.",
     date: "YEAR 2019",
     bottom: poster13_bottom,
@@ -543,6 +544,14 @@ const articles = [
     tag: ["hand drawn"]
   },
   {
+    title: "圣诞老人 - C4D",
+    designer: "Tsui.",
+    date: "YEAR 2019",
+    imgs: [handDrawn_4],
+    banner: handDrawn_4,
+    tag: ["hand drawn"]
+  },
+  {
     id: 10,
     title: "撒椒",
     designer: "Tsui.",
@@ -646,7 +655,7 @@ const articles = [
   },
   {
     id: 25,
-    title: "年终盘点(云片)",
+    title: "年终盘点2",
     designer: "Tsui.",
     date: "YEAR 2019",
     banner: poster13_banner2,
@@ -655,7 +664,7 @@ const articles = [
   },
   {
     id: 26,
-    title: "年终盘点(维客)",
+    title: "年终盘点3",
     designer: "Tsui.",
     date: "YEAR 2019",
     banner: poster13_banner3,

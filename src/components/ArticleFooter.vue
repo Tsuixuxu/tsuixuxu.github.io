@@ -37,7 +37,7 @@ const types = [
   },
   {
     name: "手绘",
-    tag: "handDrawn"
+    tag: "hand drawn"
   }
 ];
 export default {
